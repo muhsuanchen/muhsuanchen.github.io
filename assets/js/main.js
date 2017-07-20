@@ -22,13 +22,13 @@
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 			var url = document.URL;
-			alert(url);
+			//alert(url);
 			if(url == "https://muhsuanchen.github.io/")
 				window.location = "https://muhsuanchen.github.io/index.html";
 				
 			var id = url.substring(url.lastIndexOf('#') + 1);
 			if (id) {
-				alert(id);
+				//alert(id);
 				var idObj = document.getElementById(id);
 				idObj.click();
 			}
