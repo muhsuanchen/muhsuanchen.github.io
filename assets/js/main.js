@@ -39,7 +39,7 @@
 					if (id) {
 						//alert(id);
 						//console.log(id);
-						var idObj = document.getElementById("wayout");
+						var idObj = document.getElementById(id);
 						//console.log(idObj.getAttribute("class"));
 						idObj.click();
 					}
@@ -211,6 +211,8 @@
 							}
 						}
 						modal.unbind('reveal:open');
+
+						document.getElementsByTagName("BODY")[0].style.overflow = "hidden";
 					}); 	
 
 					//Closing Animation
@@ -242,6 +244,8 @@
 							}		
 						}
 						modal.unbind('reveal:close');
+
+						document.getElementsByTagName("BODY")[0].style.overflow = "auto";
 					});     
 		   	
 		/*---------------------------
