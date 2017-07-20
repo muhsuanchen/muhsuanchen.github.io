@@ -89,7 +89,7 @@
 		}
 	
 	.reveal-modal {
-		visibility: hidden;
+		display: none;
 		width: 60%;
 		max-height: 80%;
 		background: #eee url(../../images/modal-gloss.png) no-repeat;
