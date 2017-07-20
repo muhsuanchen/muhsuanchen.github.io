@@ -25,16 +25,25 @@
 			//alert(url);
 			if(url == "https://muhsuanchen.github.io/")
 				window.location = "https://muhsuanchen.github.io/index.html";
-				
-			var id = url.substring(url.lastIndexOf('#') + 1);
-			if (id) {
-				//alert(id);
-				var idObj = document.getElementById(id);
-				idObj.click();
-			}
+			else if(url == "https://muhsuanchen.github.io")
+				window.location = "https://muhsuanchen.github.io/index.html";
 
 			$window.on('load', function() {
 				$body.removeClass('is-loading');
+
+				if(url.includes("#"))
+				{
+					var id = url.substring(url.lastIndexOf('#') + 1);
+					//console.log(url);
+					//console.log(id);
+					if (id) {
+						//alert(id);
+						//console.log(id);
+						var idObj = document.getElementById("wayout");
+						//console.log(idObj.getAttribute("class"));
+						idObj.click();
+					}
+				}
 			});
 
 		// CSS polyfills (IE<9).
@@ -131,6 +140,7 @@
 
 			$('a[data-reveal-id]').click(function(event) {
 				/*event.preventDefault();*/
+				//console.log($(this).attr('data-reveal-id'));
 				var modalLocation = $(this).attr('data-reveal-id');
 				$('#'+modalLocation).reveal($(this).data());
 			});
