@@ -23,9 +23,9 @@
 			$body.addClass('is-loading');
 			var url = document.URL;
 			alert(url);
-			if(url === "https://muhsuanchen.github.io/")
-			window.location = "https://muhsuanchen.github.io/index.html";
-			
+			if(url == "https://muhsuanchen.github.io/")
+				window.location = "https://muhsuanchen.github.io/index.html";
+				
 			var id = url.substring(url.lastIndexOf('#') + 1);
 			if (id) {
 				alert(id);
