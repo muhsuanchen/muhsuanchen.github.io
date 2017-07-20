@@ -56,6 +56,50 @@
 		box-sizing: border-box;
 	}
 
+.hr_container{
+	text-align: center;
+	color: #818078;
+	max-width: 50%;  
+  	margin: 20px auto 0px auto;
+}
+
+.hr-text, .hr-text:before, .hr-text:after {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  height: 1.5em;
+  /*opacity: .5;*/
+}
+ 
+.hr-text:before {
+    content: '';
+    /* use the linear-gradient for the fading effect */
+    /* use a solid background color for a solid bar */
+    background: linear-gradient(to right, transparent, #B6B6B4, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    /* this is really the only tricky part, you need to specify the background color of the container element...*/
+    color: #B6B6B4;
+    background-color: #ebebeb;
+}
+
 /* Video */
 .videowrapper {
     float: none;
@@ -65,7 +109,6 @@
     padding-bottom: 56.25%;
     padding-top: 25px;
     height: 0;
-    margin-bottom: 5px;
 }
 .videowrapper iframe {
     position: absolute;
@@ -158,6 +201,11 @@
 		line-height: 130%;
 		font-size: 14px;
 		color: #B6B6B4;/*#D1D0CE;*/
+	}
+
+	.project_adjunct{
+	    margin-top: 5px;
+	    margin-bottom: 5px;
 	}
 
 	.intro_fulltext{
@@ -2374,7 +2422,7 @@
 
 			#main > section.dark {
 				color: #fff;
-				color: rgba(255, 255, 255, 1);
+				color: rgba(255, 255, 255, 0.9);
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
