@@ -211,8 +211,8 @@
 							}
 						}
 						modal.unbind('reveal:open');
-
 						document.getElementsByTagName("BODY")[0].style.overflow = "hidden";
+						document.ontouchmove = function(e){ e.preventDefault(); }
 					}); 	
 
 					//Closing Animation
@@ -244,8 +244,8 @@
 							}		
 						}
 						modal.unbind('reveal:close');
-
 						document.getElementsByTagName("BODY")[0].style.overflow = "auto";
+						document.ontouchmove = function(e){ return true; }
 					});     
 		   	
 		/*---------------------------
