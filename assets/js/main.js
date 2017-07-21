@@ -34,7 +34,7 @@
 				if(url.includes("#"))
 				{
 					var id = url.substring(url.lastIndexOf('#') + 1);
-					//console.log(url);
+					//sole.logcon(url);
 					//console.log(id);
 					if (id) {
 						//alert(id);
@@ -134,7 +134,7 @@
 					$('#headerToggle, #header, #main')
 						.css('transition', 'none');
 
-		
+
 		/*---------------------------
 		 Listener for data-reveal-id attributes
 		----------------------------*/
@@ -222,6 +222,7 @@
 							 || navigator.userAgent.match(/Windows Phone/i) */
 						if( window.innerWidth <= 960 ){
 						    $("body").addClass("modal-open-mobile");
+						    $("body").ontouchmove = function(e){ e.preventDefault(); }
 						} else {
 							console.log('desktop.');
 							$("body").addClass("modal-open");
@@ -269,6 +270,7 @@
 						
 						if( window.innerWidth <= 960 ){
 						    $("body").removeClass("modal-open-mobile");
+						    $("body").ontouchmove = function(e){ return true; }
 						} else {
 							$("body").removeClass("modal-open");
 						}
@@ -322,4 +324,66 @@
 	});
 
 })(jQuery);
+
+/* Image Slider */
+var slideIndex = 1;
+//showSlides(slideIndex);
+
+function plusSlides(n, str) {
+	showSlides(slideIndex += n, str);
+}
+
+function currentSlide(n, str) {
+	showSlides(slideIndex = n, str);
+}
+
+function showSlides(n, str) {
+	var current_slider = document.getElementById(str);
+	var imageDiv, dotDiv;
+	for (var i = 0; i < current_slider.childNodes.length; i++) {
+		if (current_slider.childNodes[i].className == "slideshow-container")
+			imageDiv = current_slider.childNodes[i];
+		else if (current_slider.childNodes[i].className == "dot-container")
+			dotDiv = current_slider.childNodes[i];
+	}
+
+	var firstImage, lastImage;
+	var imageCount = 0;
+	for (var i = 0; i < imageDiv.childNodes.length; i++) {
+		//console.log("image className " + imageDiv.childNodes[i].className);
+	    if (imageDiv.childNodes[i].className == "SlideImage fade") {
+	    	if(imageCount == 0)
+	    		firstImage = imageDiv.childNodes[i];
+	    	else
+	    		lastImage = imageDiv.childNodes[i];
+
+	    	if(imageCount == slideIndex-1)
+	    		imageDiv.childNodes[i].style.display = "block";
+	    	else
+	      		imageDiv.childNodes[i].style.display = "none";
+	      	imageCount++;
+	    }        
+	}
+	//console.log("imageCount " + imageCount);
+	if (n > imageCount) {
+		slideIndex = 1;
+		firstImage.style.display = "block";
+	} 
+	if (n < 1) {
+		slideIndex = imageCount;
+		lastImage.style.display = "block";
+	}
+
+	var dotCount = 0;
+	//console.log("slideIndex " + slideIndex);
+	for (var i = 0; i < dotDiv.childNodes.length; i++) {
+	    if (dotDiv.childNodes[i].className == "SlideImageDot" || dotDiv.childNodes[i].className == "SlideImageDot active") {
+	    	if(dotCount == slideIndex-1)
+	    		dotDiv.childNodes[i].className = "SlideImageDot active";
+	    	else
+	      		dotDiv.childNodes[i].className = "SlideImageDot";
+	      	dotCount++;
+	    }        
+	}
+}
 

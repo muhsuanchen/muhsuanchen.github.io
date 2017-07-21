@@ -42,20 +42,6 @@
 		<!--<script src="assets/js/jquery.min.js"></script>-->
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/jquery.scrollzer.min.js"></script>
-
-		<script type="text/javascript" src="assets/js/yams.viewport.js"></script>
-		<script type="text/javascript">
-		    // add callbacks before document ready
-		    $.yams.viewport.addCallback(function(viewport) {
-				// viewport object schema
-				// {
-				//     name: name of currently set viewport
-				//     width: current window width
-				//     height: current window height
-				// }
-				console.log('viewport is now ', viewport)
-		    })
-		</script> 
 	</head>
 	<body>
 
@@ -155,7 +141,7 @@
 									<article class="item">
 										<!-- Pop Up Detail -->
 										<div id="wayout_dialog" class="reveal-modal">
-
+											<!-- Details -->
 											<h2>Way Out</h2>
 											<div class="project_date">
 												NTU &nbsp;|&nbsp; Jan. 2017 - May. 2017<br>
@@ -178,6 +164,7 @@
 
 											<hr>
 
+											<!-- Adjuncts -->
 											<div class="project_adjunct">
 												<h4>Game Play Video (Submission ver.)</h4>
 												<div class="videowrapper">
@@ -192,13 +179,65 @@
 												</div>
 											</div>
 
+											<hr>
+
+											<!-- Image Slider -->
+											<div class="project_adjunct">
+											<h4>Photos at Denver, America.</h4>
+											<div id="wayout_imageslider">
+												<div class="slideshow-container">
+													<div class="SlideImage fade">
+														<div class="SlideImageNumberText">1 / 5</div>
+														<img src="images/wayout/IMG_9641.jpg" style="width:100%">
+														<div class="SlideImageText">Exhibition.</div>
+													</div>
+
+													<div class="SlideImage fade">
+														<div class="SlideImageNumberText">2 / 5</div>
+														<img src="images/wayout/IMG_9847.jpg" style="width:100%">
+														<div class="SlideImageText">360 photo before presentation.</div>
+													</div>
+
+													<div class="SlideImage fade">
+														<div class="SlideImageNumberText">3 / 5</div>
+														<img src="images/wayout/IMG_9836.jpg" style="width:100%">
+														<div class="SlideImageText">Presentation record.</div>
+													</div>
+
+													<div class="SlideImage fade">
+														<div class="SlideImageNumberText">4 / 5</div>
+														<img src="images/wayout/IMG_9885.jpg" style="width:100%">
+														<div class="SlideImageText">Photo with SGC chair.</div>
+													</div>
+
+													<div class="SlideImage fade">
+														<div class="SlideImageNumberText">5 / 5</div>
+														<img src="images/wayout/IMG_9918.jpg" style="width:100%">
+														<div class="SlideImageText">Photo with denver bear.</div>
+													</div>
+
+													<a class="SlideImagePrev" onclick="plusSlides(-1, 'wayout_imageslider')">&#10094;</a>
+													<a class="SlideImageNext" onclick="plusSlides(1, 'wayout_imageslider')">&#10095;</a>
+												</div>
+
+												<div class="dot-container">
+													<span class="SlideImageDot" onclick="currentSlide(1, 'wayout_imageslider')"></span> 
+													<span class="SlideImageDot" onclick="currentSlide(2, 'wayout_imageslider')"></span> 
+													<span class="SlideImageDot" onclick="currentSlide(3, 'wayout_imageslider')"></span> 
+													<span class="SlideImageDot" onclick="currentSlide(4, 'wayout_imageslider')"></span> 
+													<span class="SlideImageDot" onclick="currentSlide(5, 'wayout_imageslider')"></span> 
+												</div>
+											</div>
+											</div>
+
+											<!-- End Text -->
 											<div class="hr_container"><hr class="hr-text" data-content="WAY OUT"></div>
 
 											<a class="close-reveal-modal">&#215;</a>
 										</div>
 
 										<!-- Project Info -->
-										<a id="wayout" href="#wayout" class="image fit" data-reveal-id="wayout_dialog" data-animation="fade"><img src="images/wayout_project.png" alt="" /></a>
+										<a id="wayout" href="#wayout" class="image fit" onclick="currentSlide(1, 'wayout_imageslider')" data-reveal-id="wayout_dialog" data-animation="fade"><img src="images/wayout/wayout_project.png" alt="" /></a>
 
 										<header>
 											<h3>Wayout</h3>
@@ -237,12 +276,48 @@
 												<a href="http://dl.acm.org/citation.cfm?id=2988250">[Paper Portal]</a>
 											</div>
 
-
 											<hr>
-											
-											<h4>Paper Teaser</h4>
+
+											<!-- Image Slider -->
 											<div class="project_adjunct">
-												<img src="images/vibroplay_project.png" width="100%" alt="" />
+											<h4>Photos at Macao, China.</h4>
+											<div id="vibroplay_imageslider">
+												<div class="slideshow-container">
+													<div class="SlideImage fade">
+														<div class="SlideImageNumberText">1 / 4</div>
+														<img src="images/vibroplay/IMG_6097.jpg" style="width:100%">
+														<div class="SlideImageText">Exhibition preparing.</div>
+													</div>
+
+													<div class="SlideImage fade">
+														<div class="SlideImageNumberText">2 / 4</div>
+														<img src="images/vibroplay/IMG_6165.jpg" style="width:100%">
+														<div class="SlideImageText">Photo with dear partners.</div>
+													</div>
+
+													<div class="SlideImage fade">
+														<div class="SlideImageNumberText">3 / 4</div>
+														<img src="images/vibroplay/640.jpeg" style="width:100%">
+														<div class="SlideImageText">Exhibition record. (Photo by VCC@SZU)</div>
+													</div>
+
+													<div class="SlideImage fade">
+														<div class="SlideImageNumberText">4 / 4</div>
+														<img src="images/vibroplay/IMG_6277.jpg" style="width:100%">
+														<div class="SlideImageText">Presentation record.</div>
+													</div>
+
+													<a class="SlideImagePrev" onclick="plusSlides(-1, 'vibroplay_imageslider')">&#10094;</a>
+													<a class="SlideImageNext" onclick="plusSlides(1, 'vibroplay_imageslider')">&#10095;</a>
+												</div>
+
+												<div class="dot-container">
+													<span class="SlideImageDot" onclick="currentSlide(1, 'vibroplay_imageslider')"></span> 
+													<span class="SlideImageDot" onclick="currentSlide(2, 'vibroplay_imageslider')"></span> 
+													<span class="SlideImageDot" onclick="currentSlide(3, 'vibroplay_imageslider')"></span> 
+													<span class="SlideImageDot" onclick="currentSlide(4, 'vibroplay_imageslider')"></span> 
+												</div>
+											</div>
 											</div>
 											
 											<div class="hr_container"><hr class="hr-text" data-content="VIBROPLAY"></div>
@@ -250,7 +325,7 @@
 										</div>
 
 										<!-- Project Info -->
-										<a id="vibroplay" href="#vibroplay" class="image fit" data-reveal-id="vibroplay_dialog" data-animation="fade"><img src="images/vibroplay_project.png" alt="" /></a>
+										<a id="vibroplay" href="#vibroplay" class="image fit" onclick="currentSlide(1, 'vibroplay_imageslider')" data-reveal-id="vibroplay_dialog" data-animation="fade"><img src="images/vibroplay_project.png" alt="" /></a>
 										<header>
 											<h3>Vibroplay</h3>
 											<div class="project_info">
@@ -523,7 +598,7 @@
 								<tbody class="about_table_body">
 									<tr>
 										<td class="about_table_td_left">
-											<span class="image wayout"><img src="images/Wayout.png" alt="" /></span>
+											<span class="image wayout"><img src="images/wayout/Wayout.png" alt="" /></span>
 										</td>
 										<td class="about_table_td_right">
 											<a href="http://dl.acm.org/citation.cfm?id=3048410">Way Out: A Multi-Layer Panorama Mobile Game Using Around-Body Interactions.</a>
