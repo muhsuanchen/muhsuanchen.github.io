@@ -78,6 +78,13 @@ body.modal-open-mobile {
     overflow:hidden;
 }
 
+body.viewport-lg {
+    /* block scroll for desktop;
+    // will not jump to top;
+    // will not prevent scroll on mobile */
+    position: absolute; 
+}
+
 .hr_container{
 	text-align: center;
 	color: #818078;
@@ -2694,10 +2701,10 @@ body.modal-open-mobile {
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
-				-moz-transform: translateX(-275px);
-				-webkit-transform: translateX(-275px);
-				-ms-transform: translateX(-275px);
-				transform: translateX(-275px);
+				-moz-transform: translateX(-250px);
+				-webkit-transform: translateX(-250px);
+				-ms-transform: translateX(-250px);
+				transform: translateX(-250px);
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
@@ -2709,9 +2716,8 @@ body.modal-open-mobile {
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 275px;
+				width: 250px;
 				z-index: 10002;
-				width: 275px;
 				background: #222729 url("images/overlay.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
@@ -2788,17 +2794,17 @@ body.modal-open-mobile {
 					}
 
 			body.header-visible #main {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(250px);
+				-webkit-transform: translateX(250px);
+				-ms-transform: translateX(250px);
+				transform: translateX(250px);
 			}
 
 			body.header-visible #headerToggle {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(250px);
+				-webkit-transform: translateX(250px);
+				-ms-transform: translateX(250px);
+				transform: translateX(250px);
 			}
 
 			body.header-visible #header {
