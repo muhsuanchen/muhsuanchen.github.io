@@ -216,7 +216,9 @@
 						//$("body").addClass("modal-open");
 						document.getElementById("headerToggle").style.display = "none";
 						document.body.style.overflow = "hidden";
-						document.body.addEventListener("touchmove", freezeVp, false);
+						document.body.style.height = "100%";
+						//document.body.addEventListener("touchmove", freezeVp, false);
+						//$(this).addEventListener("touchmove", AVfreeze, false);
 						//document.getElementsByTagName("BODY")[0].ontouchmove = function(e){ e.preventDefault(); }
 					}); 	
 
@@ -255,12 +257,16 @@
 						//$("body").removeClass("modal-open");
 						document.getElementById("headerToggle").style.display = "block";
 						document.body.style.overflow = "auto";
-						document.body.removeEventListener("touchmove", freezeVp, false);
+						document.body.style.height = "auto";
+						//document.body.removeEventListener("touchmove", freezeVp, false);
 						//document.getElementsByTagName("BODY")[0].ontouchmove = function(e){ return true; }
 					});
 
 				var freezeVp = function(e) {
 				    e.preventDefault();
+				};
+				var AVfreeze = function(e) {
+				    return true;
 				};
 		   	
 		/*---------------------------
