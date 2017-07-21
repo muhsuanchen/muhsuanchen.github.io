@@ -214,8 +214,9 @@
 						modal.unbind('reveal:open');
 						//console.log('modal is open.');
 						//$("body").addClass("modal-open");
+						document.getElementById("headerToggle").style.display = "none";
 						document.getElementsByTagName("BODY")[0].style.overflow = "hidden";
-						document.getElementsByTagName("BODY")[0].ontouchmove = function(e){ e.preventDefault(); }
+						//document.getElementsByTagName("BODY")[0].ontouchmove = function(e){ e.preventDefault(); }
 					}); 	
 
 					//Closing Animation
@@ -249,8 +250,9 @@
 						modal.unbind('reveal:close');
 						//console.log('modal is close.');
 						//$("body").removeClass("modal-open");
+						document.getElementById("headerToggle").style.display = "block";
 						document.getElementsByTagName("BODY")[0].style.overflow = "auto";
-						document.getElementsByTagName("BODY")[0].ontouchmove = function(e){ return true; }
+						//document.getElementsByTagName("BODY")[0].ontouchmove = function(e){ return true; }
 					});     
 		   	
 		/*---------------------------
