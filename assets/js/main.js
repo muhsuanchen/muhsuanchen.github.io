@@ -215,9 +215,12 @@
 						//console.log('modal is open.');
 						//$("body").addClass("modal-open");
 						document.getElementById("headerToggle").style.display = "none";
-						document.getElementsByTagName("BODY")[0].style.overflow = "hidden";
+						document.body.style.overflow = "hidden";
+						document.body.addEventListener("touchmove", freezeVp, false);
 						//document.getElementsByTagName("BODY")[0].ontouchmove = function(e){ e.preventDefault(); }
 					}); 	
+
+
 
 					//Closing Animation
 					modal.bind('reveal:close', function () {
@@ -251,9 +254,14 @@
 						//console.log('modal is close.');
 						//$("body").removeClass("modal-open");
 						document.getElementById("headerToggle").style.display = "block";
-						document.getElementsByTagName("BODY")[0].style.overflow = "auto";
+						document.body.style.overflow = "auto";
+						document.body.removeEventListener("touchmove", freezeVp, false);
 						//document.getElementsByTagName("BODY")[0].ontouchmove = function(e){ return true; }
-					});     
+					});
+
+				var freezeVp = function(e) {
+				    e.preventDefault();
+				};
 		   	
 		/*---------------------------
 		 Open and add Closing Listeners
