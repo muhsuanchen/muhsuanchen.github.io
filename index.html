@@ -42,6 +42,20 @@
 		<!--<script src="assets/js/jquery.min.js"></script>-->
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/jquery.scrollzer.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/yams.viewport.js"></script>
+		<script type="text/javascript">
+		    // add callbacks before document ready
+		    $.yams.viewport.addCallback(function(viewport) {
+				// viewport object schema
+				// {
+				//     name: name of currently set viewport
+				//     width: current window width
+				//     height: current window height
+				// }
+				console.log('viewport is now ', viewport)
+		    })
+		</script> 
 	</head>
 	<body>
 
@@ -557,7 +571,7 @@
 		<!-- Footer -->
 			<div id="footer">
 			muhsuan.chen <br>
-			<span class="footnotesize">last update at 2017/7/21 Thu. 00:30 (GMT+8)</span>
+			<span class="footnotesize">last update at 2017/7/21 Thu. 17:00 (GMT+8)</span>
 				<!-- Copyright 
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>

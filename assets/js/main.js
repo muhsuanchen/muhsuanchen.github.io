@@ -134,6 +134,7 @@
 					$('#headerToggle, #header, #main')
 						.css('transition', 'none');
 
+		
 		/*---------------------------
 		 Listener for data-reveal-id attributes
 		----------------------------*/
@@ -211,8 +212,10 @@
 							}
 						}
 						modal.unbind('reveal:open');
+						//console.log('modal is open.');
+						//$("body").addClass("modal-open");
 						document.getElementsByTagName("BODY")[0].style.overflow = "hidden";
-						document.ontouchmove = function(e){ e.preventDefault(); }
+						document.getElementsByTagName("BODY")[0].ontouchmove = function(e){ e.preventDefault(); }
 					}); 	
 
 					//Closing Animation
@@ -244,8 +247,10 @@
 							}		
 						}
 						modal.unbind('reveal:close');
+						//console.log('modal is close.');
+						//$("body").removeClass("modal-open");
 						document.getElementsByTagName("BODY")[0].style.overflow = "auto";
-						document.ontouchmove = function(e){ return true; }
+						document.getElementsByTagName("BODY")[0].ontouchmove = function(e){ return true; }
 					});     
 		   	
 		/*---------------------------

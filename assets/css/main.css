@@ -56,6 +56,13 @@
 		box-sizing: border-box;
 	}
 
+body.modal-open {
+    /* block scroll for mobile;
+    // causes underlying page to jump to top;
+    // prevents scrolling on all screens */
+    overflow: hidden;
+}
+
 .hr_container{
 	text-align: center;
 	color: #818078;
