@@ -59,8 +59,23 @@
 body.modal-open {
     /* block scroll for mobile;
     // causes underlying page to jump to top;
+    // prevents scrolling on all screens 
+    left: 0;
+    top: 0;
+    */
+    height:100%;
+    overflow:hidden;
+}
+
+body.modal-open-mobile {
+    /* block scroll for mobile;
+    // causes underlying page to jump to top;
     // prevents scrolling on all screens */
-    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    overflow:hidden;
 }
 
 .hr_container{
