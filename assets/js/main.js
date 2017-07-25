@@ -15,6 +15,7 @@
 	});
 
 	$(function() {
+		$("#wayoutfile").load("projects/wayout.html");
 
 		var	$window = $(window),
 			$body = $('body');
