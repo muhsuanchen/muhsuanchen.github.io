@@ -16,6 +16,10 @@
 
 	$(function() {
 		$("#wayoutfile").load("projects/wayout.html");
+		$("#vibroplayfile").load("projects/vibroplay.html");
+		$("#runningboxfile").load("projects/runningbox.html");
+		$("#runningtoolboxfile").load("projects/runningtoolbox.html");
+		$("#friendshousefile").load("projects/friendshouse.html");
 
 		var	$window = $(window),
 			$body = $('body');

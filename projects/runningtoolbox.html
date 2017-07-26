@@ -1,0 +1,78 @@
+<div id="runningtoolbox_dialog"" class="reveal-modal">
+	<h2>Running Toolbox</h2>
+	<div class="project_date">
+		NTOU &nbsp;|&nbsp; Junior Spring<br>
+	</div>
+	<span class="project_gray">JAVA Programming and Design</span><br>
+
+	<div class="project_detail">
+	<p>實作出多款常用的桌面小工具，並融合、開發出一套嶄新的整合性系統。 以桌寵作為主介面，使用者可以自由開啟任何本系統提供之小工具，包括 月曆、便利貼、電腦系統資訊、簡易圖片編輯。</p>
+	<p>
+	- 本系統 使用 Multithreading 技術，讓多個子系統可以同時開啟使用，而不互相干擾。<br>
+	- 使用 DesktopPane 與 JInternalFrame 來設計介面，使得所有小工具皆開啟於同一個主介面中。<br>
+	- 本系統介面風格統一，可自由設置佈景色彩與不透明度，並且系統將自動儲存使用者設定於本地端，於下次開啟時直接套用。<br>
+	- 作為桌面小工具，本 系統不耗費 CPU 資源，適宜常駐使用。且可以選擇「置頂」，使本系統永遠在螢幕畫面最上層。
+	</p>
+	<!--A novel desktop toolbox consisting calendar, computer system information, note, image editor, and a screen pet Lily as a system manager.<br>
+	- Multithreading using, every tool will process parallelly.<br>
+	- DesktopPane and JInternalFrame were used to develop interfaces, make all tools in the main window.<br>
+	- Network free, user data will be recorded locally, and reapply when system restarted.<br>
+	- Low CPU cost for a long time service.<br>-->
+	</div>
+
+	<br>
+	<div class="project_info">
+		<span class="icon fa-bookmark">&nbsp;&nbsp;Best group in final project.</span>
+		<br>
+		<a target="_blank" href="https://drive.google.com/file/d/0Byn7zUnE-rLHN1dYbXN3cENDSms/edit?usp=sharing">[Windows Ver. Tool Download (Google Drive)]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a target="_blank" href="https://muhsuanchen.github.io/files/RunningToolbox_Slide.pdf">[Slide Download]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a target="_blank" href="https://muhsuanchen.github.io/files/RunningToolbox.pdf">[Report Download]</a>
+	</div>
+
+	<hr>
+
+	<!-- Image Slider -->
+	<div class="project_adjunct">
+	<!--h4>Photos at Macao, China.</h4-->
+	<div id="runningtoolbox_imageslider">
+		<div class="slideshow-container">
+			<div class="SlideImage fade">
+				<div class="SlideImageNumberText GrayText">1 / 4</div>
+				<img src="images/runningtoolbox/family.jpg" style="width:100%">
+				<div class="SlideImageText GrayText">System Overview</div>
+			</div>
+
+			<div class="SlideImage fade">
+				<div class="SlideImageNumberText GrayText">2 / 4</div>
+				<img src="images/runningtoolbox/SystemStructure.png" style="width:100%">
+				<!--div class="SlideImageText">Photo with dear partners.</div-->
+			</div>
+
+			<div class="SlideImage fade">
+				<div class="SlideImageNumberText GrayText">3 / 4</div>
+				<img src="images/runningtoolbox/pet.png" style="width:100%">
+				<div class="SlideImageText GrayText">桌寵生態</div>
+			</div>
+
+			<div class="SlideImage fade">
+				<div class="SlideImageNumberText GrayText">4 / 4</div>
+				<img src="images/runningtoolbox/interface.jpg" style="width:100%">
+				<!--div class="SlideImageText BlackText">介面預覽</div-->
+			</div>
+
+			<a class="SlideImagePrev" onclick="plusSlides(-1, 'runningtoolbox_imageslider')">&#10094;</a>
+			<a class="SlideImageNext" onclick="plusSlides(1, 'runningtoolbox_imageslider')">&#10095;</a>
+		</div>
+
+		<div class="dot-container">
+			<span class="SlideImageDot" onclick="currentSlide(1, 'runningtoolbox_imageslider')"></span> 
+			<span class="SlideImageDot" onclick="currentSlide(2, 'runningtoolbox_imageslider')"></span> 
+			<span class="SlideImageDot" onclick="currentSlide(3, 'runningtoolbox_imageslider')"></span> 
+			<span class="SlideImageDot" onclick="currentSlide(4, 'runningtoolbox_imageslider')"></span> 
+		</div>
+	</div>
+	</div>
+	
+	<div class="hr_container"><hr class="hr-text" data-content="RUNNING TOOLBOX"></div>
+	<a class="close-reveal-modal">&#215;</a>
+</div>

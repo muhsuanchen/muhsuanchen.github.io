@@ -51,6 +51,10 @@
 
 * {box-sizing:border-box}
 
+div.project_detail p {
+	margin: 14px 0 0 0;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -112,6 +116,14 @@
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+.GrayText {
+	color: #736F6E;
+}
+
+.BlackText {
+	color: #000000;
 }
 
 /* The dots/bullets/indicators */
@@ -258,10 +270,10 @@ body.modal-open-mobile {
 	.reveal-modal {
 		display: none;
 		width: 60%;
-		max-height: 80%;
+		max-height: 90%;
 		background: #eee url(../../images/modal-gloss.png) no-repeat;
 		position: fixed;
-		top: 10%;
+		top: 5%;
 		left: 20%;
 		overflow: auto;
 		
@@ -2766,10 +2778,8 @@ body.modal-open-mobile {
 			}*/
 
 			.reveal-modal { 
-				top: 5%;
 				left: 0%;
-				width: 100%; 
-				max-height: 90%;
+				width: 100%;
 			}
 
 			.container {
@@ -2966,10 +2976,8 @@ body.modal-open-mobile {
 			}
 
 			.reveal-modal { 
-				top:5%;
 				left: 0%;
-				width: 100%; 
-				max-height: 90%;
+				width: 100%;
 			}
 
 			.container {
