@@ -280,7 +280,7 @@ body.modal-open-mobile {
 		overflow: auto;
 		
 		z-index: 101;
-		padding: 50px 60px 54px;
+		padding: 50px 55px 54px;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 		border-radius: 5px;
@@ -2519,7 +2519,7 @@ body.modal-open-mobile {
 /* Footer */
 
 	#footer {
-		margin-left: 375px;
+		margin-left: 250px;
 		text-align: center;
 		background-color: #dce3e2;
 		line-height: 1em;
