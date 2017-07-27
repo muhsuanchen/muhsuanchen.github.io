@@ -15,9 +15,12 @@
 	});
 
 	$(function() {
+		$("#seeinghapticsfile").load("projects/seeinghaptics.html");
 		$("#wayoutfile").load("projects/wayout.html");
 		$("#vibroplayfile").load("projects/vibroplay.html");
 		$("#footballfile").load("projects/football.html");
+		$("#ntouappfile").load("projects/ntouapp.html");
+		$("#ntoulibraryfile").load("projects/ntoulibrary.html");
 		$("#runningboxfile").load("projects/runningbox.html");
 		$("#runningtoolboxfile").load("projects/runningtoolbox.html");
 		$("#friendshousefile").load("projects/friendshouse.html");
