@@ -245,6 +245,8 @@ body.modal-open-mobile {
     padding-bottom: 56.25%;
     padding-top: 25px;
     height: 0;
+    max-width: 1000px;
+  	margin: auto;
 }
 .videowrapper iframe {
     position: absolute;
@@ -269,16 +271,16 @@ body.modal-open-mobile {
 	
 	.reveal-modal {
 		display: none;
-		width: 70%;
+		width: 60%;
 		max-height: 90%;
 		background: #eee url(../../images/modal-gloss.png) no-repeat;
 		position: fixed;
 		top: 5%;
-		left: 15%;
+		left: 20%;
 		overflow: auto;
 		
 		z-index: 101;
-		padding: 30px 40px 34px;
+		padding: 50px 60px 54px;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 		border-radius: 5px;
@@ -2701,6 +2703,12 @@ body.modal-open-mobile {
 /* Normal */
 	@media screen and (min-width: 961px) and (max-width: 1620px) {
 
+			.reveal-modal { 
+				padding: 40px 50px 44px;
+				left: 15%;
+				width: 70%; 
+			}
+
 		/* Main */
 
 			#main > section {
@@ -2721,11 +2729,6 @@ body.modal-open-mobile {
 
 			body, input, textarea, select {
 				font-size: 16pt;
-			}
-
-			.reveal-modal { 
-				left: 15%;
-				width: 70%; 
 			}
 
 			.container {
@@ -2788,6 +2791,7 @@ body.modal-open-mobile {
 			}*/
 
 			.reveal-modal { 
+				padding: 30px 40px 34px;
 				left: 0%;
 				width: 100%;
 			}
