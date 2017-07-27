@@ -2553,7 +2553,7 @@ body.modal-open-mobile {
 		margin-left: 250px;
 		transition: opacity 0.5s ease;
 		background-image: url("../../images/bgS.png");
-		background-size: 85%;
+		background-size: 100%;
 		background-position: right top;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
@@ -2695,7 +2695,7 @@ body.modal-open-mobile {
 
 			#main {
 				margin-left: 250px;
-				background-size: 100%;
+				background-size: 90%;
 			}
 
 	}
