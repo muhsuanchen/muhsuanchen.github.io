@@ -23,6 +23,8 @@
 		$("#ntoulibraryfile").load("projects/ntoulibrary.html");
 		$("#runningboxfile").load("projects/runningbox.html");
 		$("#runningtoolboxfile").load("projects/runningtoolbox.html");
+		$("#helicopterfile").load("projects/helicopter.html");
+		$("#littleartistfile").load("projects/littleartist.html");
 		$("#friendshousefile").load("projects/friendshouse.html");
 
 		var	$window = $(window),
