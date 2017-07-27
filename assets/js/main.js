@@ -17,6 +17,7 @@
 	$(function() {
 		$("#wayoutfile").load("projects/wayout.html");
 		$("#vibroplayfile").load("projects/vibroplay.html");
+		$("#footballfile").load("projects/football.html");
 		$("#runningboxfile").load("projects/runningbox.html");
 		$("#runningtoolboxfile").load("projects/runningtoolbox.html");
 		$("#friendshousefile").load("projects/friendshouse.html");
@@ -282,6 +283,9 @@
 						document.getElementById("headerToggle").style.display = "block";
 						//document.body.removeEventListener("touchmove", freezeVp, false);
 						//document.getElementsByTagName("BODY")[0].ontouchmove = function(e){ return true; }
+
+						//var cururl = document.URL;
+						//window.location = cururl.substring(0, cururl.lastIndexOf('#'));
 					});
 
 				var freezeVp = function(e) {

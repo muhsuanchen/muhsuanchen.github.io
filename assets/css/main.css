@@ -269,12 +269,12 @@ body.modal-open-mobile {
 	
 	.reveal-modal {
 		display: none;
-		width: 60%;
+		width: 70%;
 		max-height: 90%;
 		background: #eee url(../../images/modal-gloss.png) no-repeat;
 		position: fixed;
 		top: 5%;
-		left: 20%;
+		left: 15%;
 		overflow: auto;
 		
 		z-index: 101;
@@ -318,6 +318,16 @@ body.modal-open-mobile {
 		margin-right: auto;
 	}
 
+	.project_subtitle{
+		line-height: 130%;
+	}
+
+	.project_author{
+		padding-top: 5px;
+		line-height: 130%;
+		font-size: 16px;
+	}
+
 	.project_date{
 		line-height: 130%;
 		font-size: 16px;
@@ -325,7 +335,7 @@ body.modal-open-mobile {
 
 	.project_info{
 		line-height: 130%;
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.project_detail{
@@ -2393,7 +2403,7 @@ body.modal-open-mobile {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 210px;
+		width: 250px;
 	}
 
 		#header .top {
@@ -2538,7 +2548,7 @@ body.modal-open-mobile {
 /* Main */
 
 	#main {
-		margin-left: 210px;
+		margin-left: 250px;
 		transition: opacity 0.5s ease;
 		background-image: url("../../images/bgS.png");
 		background-size: 85%;
@@ -2670,19 +2680,19 @@ body.modal-open-mobile {
 		/* Header */
 
 			#header {
-				width: 210px;
+				width: 250px;
 			}
 
 		/* Footer */
 
 			#footer {
-				margin-left: 210px;
+				margin-left: 250px;
 			}
 
 		/* Main */
 
 			#main {
-				margin-left: 210px;
+				margin-left: 250px;
 				background-size: 100%;
 			}
 
