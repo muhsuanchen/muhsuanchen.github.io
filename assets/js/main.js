@@ -25,6 +25,7 @@
 		$("#runningtoolboxfile").load("projects/runningtoolbox.html");
 		$("#helicopterfile").load("projects/helicopter.html");
 		$("#littleartistfile").load("projects/littleartist.html");
+		$("#opencvsfile").load("projects/opencvs.html");
 		$("#friendshousefile").load("projects/friendshouse.html");
 
 		var	$window = $(window),

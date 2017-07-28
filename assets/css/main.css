@@ -2050,7 +2050,7 @@ body.modal-open-mobile {
 			background: #fff;
 		}
 
-		.image.featuab {
+		.image.featured {
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
@@ -2762,8 +2762,8 @@ body.modal-open-mobile {
 		/* Main */
 
 			#main {
-				margin-left: 15%;
-				background-size: 85%;
+				margin-left: 20%;
+				background-size: 80%;
 			}
 
 	}
