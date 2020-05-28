@@ -15,6 +15,9 @@
 	});
 
 	$(function() {
+		$("#holorangerfile").load("projects/holoranger.html");
+		$("#aimonlinefile").load("projects/aimonline.html");
+		$("#gunsrushfile").load("projects/gunsrush.html");
 		$("#seeinghapticsfile").load("projects/seeinghaptics.html");
 		$("#wayoutfile").load("projects/wayout.html");
 		$("#vibroplayfile").load("projects/vibroplay.html");
